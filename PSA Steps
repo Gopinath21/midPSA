@@ -1,0 +1,45 @@
+
+ Scheduling the resource from PSA in Serviceboard and DC.
+
+SMAX-DELL BOOMI--
+
+Pre-requiest:
+
+1)Tester should have access to "SMAX"  with profile "custom-ESMX Agent"
+with permission set ESMAX manager quotation(Resource planner)
+2)Valid PSA record where Start & end dates should be current date or future dates
+
+
+Steps:
+1)Login into SFDC as a resource planner
+2)Navigate to PSA resource request
+3)Open unplanned tast list view
+4)Open the valid PSA request record & click on the case record
+
+verify case event type as "Install"
+5)Create a onsite work order and specify name of resource in PSA.
+6)While dispatching the WO order , provide the PSA resource request ID,
+provide the PSA External ID 
+and schedule it ,
+take the screen shot 
+7)Open the WO in SMax , and navigate to Open activities
+8)Open the record which is presented under open activities
+
+take the screen shot
+9)Verify the PSA external id same as in Dispatch console or Service Board.
+10)Change PSA External id with another value in Dispatch console or Service Board,
+and same id should visible for work order the open activties .
+
+
+11)Create a event for non work order event and provide the PSA External id 
+
+
+
+Take the screen shot 
+9)Logoff from Salesforce.
+
+
+
+=====================
+
+In Serive board , Work order is called as event
